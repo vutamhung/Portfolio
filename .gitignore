@@ -3,6 +3,8 @@
 !/index.html
 !/README.md
 !/.gitignore
+!/cap-nhat-github.ps1
+!/Cap nhat GitHub.bat
 !/media/
 /media/*
 !/media/sv/
