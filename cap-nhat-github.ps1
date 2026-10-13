@@ -33,7 +33,7 @@ foreach ($p in $used) {
 # 2. .gitignore: chặn tất cả, chỉ mở đúng các file trên
 $lines = @(
   "# Tạo tự động bởi cap-nhat-github.ps1: chỉ đưa lên trang và media mà trang đang dùng.",
-  "/*", "!/index.html", "!/README.md", "!/.gitignore", "!/cap-nhat-github.ps1", "!/Cap nhat GitHub.bat",
+  "/*", "!/index.html", "!/README.md", "!/HANDOFF.md", "!/.gitignore", "!/cap-nhat-github.ps1", "!/Cap nhat GitHub.bat",
   "!/media/", "/media/*", "!/media/sv/", "/media/sv/*"
 ) + ($used | ForEach-Object { "!/$_" })
 [IO.File]::WriteAllText((Join-Path $PSScriptRoot ".gitignore"), ($lines -join "`n") + "`n", (New-Object Text.UTF8Encoding $false))
