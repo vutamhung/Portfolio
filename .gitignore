@@ -1,5 +1,4 @@
-# Only the published site goes into the repo: the page and the media it references.
-# Source videos, encode temp files and preview scratch stay local.
+# Tạo tự động bởi cap-nhat-github.ps1: chỉ đưa lên trang và media mà trang đang dùng.
 /*
 !/index.html
 !/README.md
